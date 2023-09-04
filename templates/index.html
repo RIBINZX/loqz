@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from brandio.io/envato/iofrm/html/register12.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Sep 2023 11:46:58 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iofrm</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/iofrm-style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/iofrm-theme12.css' %}">
+
+</head>
+<body>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <!-- <div class="website-logo-inside">
+                            <a href="index.html">
+                                <div class="logo">
+                                    <img class="logo-size" src="../AF1QipN1XDCOIKBWw_E_zrYigxSzB82D.png" alt="">
+                                </div>
+                            </a>
+                        </div> -->
+                       <img class="loqz-logo" src="{% static 'img/loqz_logo.png' %}" alt="">
+                        <p class="loqz-p">Welcome To Loqz Promo</p>
+                        <img class="loqz-img"  src="{% static 'img/loqz_banner.png' %}" alt="">
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.name }}
+                            {{ form.phone }}
+                            {{ form.address }}
+                            <div class="form-button">
+                                <button id="submit" type="submit" class="ibtn">submit</button>
+                            </div>
+                        </form>
+                        <div class="other-links">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+<!-- Mirrored from brandio.io/envato/iofrm/html/register12.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Sep 2023 11:47:01 GMT -->
+</html>
